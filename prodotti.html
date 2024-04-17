@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0 d-inline-block d-md-flex" style="height: 100vh; width: 100vw;">
+    <div class="container-fluid p-0 d-inline-block d-md-flex vh-100 vw-100">
         <nav class="navbar bg-dark d-md-none px-2">
             <div class="container-fluid">
                 <a class="navbar-brand text-white text-uppercase" href="#">bootstrap dashboard</a>
@@ -119,23 +119,303 @@
                 </div>
             </div>
         </div>
-        <div class="row w-100 h-100 m-0">
-            <div class="col-12 bg-danger "></div>
-            <div class="col-12 bg-warning "></div>
-            <div class="col-12 bg-danger ">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div>
+        <div class="row w-100 m-0">
+            <div class="col-12 px-4">
+                <ul class="list-group list-group-flush w-100 ">
+                    <li class="list-group-item d-flex justify-content-between p-0">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div class="d-flex align-items-center  h-100">
+                                <h1 class="fs-2">10 prodotti trovati</h1>
+                            </div>
+
 
                         </div>
-                        <div>
+                        <div class="col-5 d-flex justify-content-end align-items-center">
+                            <div class="btn-group me-2 " role="group" aria-label="First group">
+                                <button type="button" class="btn btn-outline-secondary h-75 px-1 py-0">esporta</button>
+                                <button type="button" class="btn btn-outline-secondary h-75 px-1 py-0">nuovo</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1 fw-bold">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div class="d-flex align-items-center  h-100">
+                                <span class="d-inline-block fs-5">nome</span>
+                            </div>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between t">
+                            <div>
+                                <span class="d-inline-block fs-5">prezzo</span>
+                            </div>
+                            <div class="me-4">
+                                <span class="d-inline-block fs-5">stato</span>
+                            </div>
+                            <div class="me-4">
+                                <span class="d-inline-block fs-5">azione</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
 
                         </div>
                     </li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-xmark  rounded-5 p-2 border border-danger text-danger"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-check  rounded-5 p-2 border border-success text-success"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between p-1">
+                        <div class="col-7 d-flex align-items-baseline">
+                            <div style="height: 40px; width: 55px;">
+                                <img class="h-100 w-100" src="https://picsum.photos/seed/picsum/200/300" alt="img">
+                            </div>
+                            <span class=" fs-6 text-capitalize mt-0 mx-3">smartphone samsung galaxys21 </span>
+
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                            <div>
+                                <span class="d-inline-block">price</span>
+                            </div>
+
+                            <div>
+                                <span><i
+                                        class="fas fa-xmark  rounded-5 p-2 border border-danger text-danger"></i></span>
+                            </div>
+                            <div>
+                                <span><i
+                                        class="fas fa-pencil mx-2 rounded-2 p-2 border border-primary text-primary"></i></span>
+                                <span><i
+                                        class="fa-solid fa-trash  rounded-2 p-2 border border-danger text-danger"></i></span>
+                            </div>
+
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
