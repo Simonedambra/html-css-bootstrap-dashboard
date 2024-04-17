@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0" style="height: 100vh; width: 100vw;">
+    <div class="container-fluid p-0 d-inline-block d-md-flex" style="height: 100vh; width: 100vw;">
         <nav class="navbar bg-dark d-md-none px-2">
             <div class="container-fluid">
                 <a class="navbar-brand text-white text-uppercase" href="#">bootstrap dashboard</a>
@@ -27,14 +27,18 @@
                         <li class="nav-item ">
                             <a class="nav-link text-secondary text-capitalize" href="#">dashboard</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary text-capitalize" href="#">sponsorizzazione</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-secondary text-capitalize link-light link-opacity-25 link-opacity-100-hover"
+                                href="sponsor.html">sponsorizzazione</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary text-capitalize" href="#">prodotti</a>
+                            <a class="nav-link text-secondary text-capitalize link-light link-opacity-25 link-opacity-100-hover"
+                                href="prodotti.html">prodotti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary text-capitalize" href="#">nuovo prodotto</a>
+                            <a class="nav-link text-secondary text-capitalize link-light link-opacity-25 link-opacity-100-hover"
+                                href="nuovi-prodotti.html">nuovo
+                                prodotto</a>
                         </li>
                         <li class="nav-item mb-5">
                             <a class="nav-link text-secondary text-capitalize" href="#">clienti</a>
@@ -55,65 +59,89 @@
                 </div>
             </div>
         </nav>
-        <div class="flex-column flex-shrink-0 text-bg-dark d-none d-md-flex p-3"
-            style="max-width: 270px; height: 100%;">
+        <div class="flex-shrink-0 text-bg-dark d-none d-md-flex p-3" style="max-width: 270px; height: 100%;">
+            <div class="flex-column">
 
-            <div class="w-100 text-center">
-                <span class="fs-5 text-capitalize">bootstrap dashboard</span>
+                <div class="w-100 text-center">
+                    <span class="fs-5 text-capitalize">bootstrap dashboard</span>
+                </div>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-5">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sponsor.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            sponsorizzazione
+                        </a>
+                    </li>
+                    <li>
+                        <a href="prodotti.html" class="nav-link active" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            prodotti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nuovi-prodotti.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            nuovo prodotto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            clienti
+                        </a>
+                    </li>
+                </ul>
+                <div class="dropdown ">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none "
+                        aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong class="text-capitalize">mario rossi</strong>
+                        <i class="fas fa-caret-down m-1"></i>
+                    </a>
+
+                </div>
             </div>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-5">
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#home"></use>
-                        </svg>
-                        dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        sponsorizzazione
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link active" aria-current="page">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#table"></use>
-                        </svg>
-                        prodotti
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#grid"></use>
-                        </svg>
-                        nuovo prodotto
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#people-circle"></use>
-                        </svg>
-                        clienti
-                    </a>
-                </li>
-            </ul>
-            <div class="dropdown ">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none " aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong class="text-capitalize">mario rossi</strong>
-                    <i class="fas fa-caret-down m-1"></i>
-                </a>
+        </div>
+        <div class="row w-100 h-100 m-0">
+            <div class="col-12 bg-danger "></div>
+            <div class="col-12 bg-warning "></div>
+            <div class="col-12 bg-danger ">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
 
+                        </div>
+                        <div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                </ul>
             </div>
         </div>
     </div>
+
+
 
 
 
