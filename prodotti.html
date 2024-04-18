@@ -124,15 +124,25 @@
                             clienti
                         </a>
                     </li>
-                </ul>
-                <div class="dropdown ">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none "
-                        aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong class="text-capitalize">mario rossi</strong>
-                        <i class="fas fa-caret-down m-1"></i>
-                    </a>
 
+                </ul>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle show"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>mario rossi</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow show"
+                        data-popper-placement="top-start"
+                        style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(0px, -33.6px, 0px);">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -147,6 +157,33 @@
 
             <div class="col-12 px-4">
                 <ul class="list-group list-group-flush w-100 ">
+                    <!-- modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content ">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">elimina prodotto
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span>L'eliminazione sarà irrevarsibile </span>
+                                </div>
+                                <div
+                                    class="modal-footer w-100 p-0 d-flex overflow-hidden border-top-4 border-dark-subtle">
+                                    <button type="button "
+                                        class="w-50 m-0 py-2 border-start-0 border-top-0 border-bottom-0 border-dark-subtle text-primary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button "
+                                        class="w-50 m-0 py-2 border-end-0 border-top-0 border-bottom-0 border-dark-subtle text-primary">Save
+                                        changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /modal -->
 
                     <!-- li-header -->
 
@@ -218,8 +255,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -252,8 +289,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -285,8 +322,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -319,8 +356,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -353,8 +390,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -387,8 +424,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -421,8 +458,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -454,8 +491,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -488,8 +525,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
@@ -521,8 +558,8 @@
                                 <button type="button" class="btn btn-outline-primary btn-sm"><i
                                         class="fas fa-pencil "></i></button>
 
-                                <button type="button" class="btn btn-outline-danger btn-sm"><i
-                                        class="fa-solid fa-trash"></i></i></button>
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class="fa-solid fa-trash"></i></i></button>
 
                             </div>
 
